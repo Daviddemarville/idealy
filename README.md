@@ -2,8 +2,6 @@
 
 Ce projet est un monorepo JS, suivant l'architecture React-Express-MySQL telle qu'enseignée à la Wild Code School (v7.2.4) :
 
-Il constitue le projet 3 de notre formation de mars a Juillet 2025.
-
 ```mermaid
 sequenceDiagram
     box Web Client
@@ -45,7 +43,7 @@ Il est pré-configuré avec un ensemble d'outils pour aider les étudiants à pr
 
 ## Table des Matières
 
-- [idealy](#idealy)
+- [idealy](#name)
   - [Table des Matières](#table-des-matières)
   - [Installation \& Utilisation](#installation--utilisation)
   - [Les choses à retenir](#les-choses-à-retenir)
@@ -76,13 +74,13 @@ Il est pré-configuré avec un ensemble d'outils pour aider les étudiants à pr
 
 ### Commandes de Base
 
-| Commande             | Description                                                         |
-| -------------------- | ------------------------------------------------------------------- |
-| `npm install`        | Installe les dépendances pour le client et le serveur               |
-| `npm run db:migrate` | Met à jour la base de données à partir d'un schéma défini           |
-| `npm run dev`        | Démarre les deux serveurs (client et serveur) dans un seul terminal |
-| `npm run check`      | Exécute les outils de validation (linting et formatage)             |
-| `npm run test`       | Exécute les tests unitaires et d'intégration                        |
+| Commande               | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| `npm install`          | Installe les dépendances pour le client et le serveur                       |
+| `npm run db:migrate`   | Met à jour la base de données à partir d'un schéma défini                   |
+| `npm run dev`          | Démarre les deux serveurs (client et serveur) dans un seul terminal         |
+| `npm run check`        | Exécute les outils de validation (linting et formatage)                     |
+| `npm run test`         | Exécute les tests unitaires et d'intégration                                |
 
 ### Structure des Dossiers
 
@@ -285,7 +283,7 @@ declare global {
 ### REST
 
 | Opération | Méthode | Chemin d'URL | Corps de la requête | SQL    | Réponse (Succès)               | Réponse (Erreur)                                                       |
-| --------- | ------- | ------------ | ------------------- | ------ | ------------------------------ | ---------------------------------------------------------------------- |
+|-----------|---------|--------------|---------------------|--------|--------------------------------|------------------------------------------------------------------------|
 | Browse    | GET     | /items       |                     | SELECT | 200 (OK), liste des items.     |                                                                        |
 | Read      | GET     | /items/:id   |                     | SELECT | 200 (OK), un item.             | 404 (Not Found), si id invalide.                                       |
 | Add       | POST    | /items       | Données de l'item   | INSERT | 201 (Created), id d'insertion. | 400 (Bad Request), si corps invalide.                                  |
