@@ -1,0 +1,79 @@
+/* client/src/App.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-greyBackground: #f5f5f7;
+  --color-blackBackground: #1d1d1f;
+  --color-card: #ffffff;
+  --color-redButton: #ff5f57;
+  --color-yellowButton: #ffbd2e;
+  --color-greenButton: #28c940;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+body {
+  max-width: 90rem;
+  margin: 0 auto;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.font-kalam {
+  font-family: "Kalam", cursive;
+}
+
+[style*="font-size: xx-small"] {
+  font-size: 0.75rem !important; /* taille 1 */
+}
+[style*="font-size: small"] {
+  font-size: 0.875rem !important; /* taille 2 */
+}
+[style*="font-size: medium"] {
+  font-size: 1rem !important; /* taille 3 */
+}
+[style*="font-size: large"] {
+  font-size: 1.125rem !important; /* taille 4 */
+}
+[style*="font-size: x-large"] {
+  font-size: 1.25rem !important; /* taille 5 */
+}
+[style*="font-size: xx-large"] {
+  font-size: 1.5rem !important; /* taille 6 */
+}
+font[size="7"] {
+  font-size: 2.25rem !important; /* taille 7 */
+}
+
+.idea-truncate * {
+  font-size: 1rem !important;
+  line-height: 1.25rem !important;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  word-wrap: break-word; /* fallback pour anciens navigateurs */
+  hyphens: auto;
+}
+
+.idea-truncate {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Forcer le retour à la ligne sur les titres d'idées */
+.idea-title {
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
+  hyphens: auto;
+  max-width: 100%;
+}
